@@ -18,7 +18,7 @@ function calcularResultado() {
   var vela = grama - ml;
 
   // Atualizando o texto do resultado na tag <h1>
-  resultado.textContent = "Você vai precisar de: " + resultadoCalculado + " Gramas de essencia e " + vela + " Gramas de cera de coco";
+  resultado.textContent = "Você vai precisar de: " + resultadoCalculado + " Gramas de essencia e " + vela + " Gramas de cera";
 }
 
 
