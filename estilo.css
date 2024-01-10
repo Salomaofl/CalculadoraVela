@@ -5,7 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #0632a0d7;
+    background: url("candlelights-1868525_1280.jpg") ;
   }
   
   #Corpo {
@@ -29,15 +29,21 @@ body {
   }
   
   button {
-    background-color: #4285F4;
+    background-color: #000000;
     color: #fff;
     cursor: pointer;
+    border-radius: 90px;
   }
   
   h1 {
     margin: 10px;
     font-size: 24px;
     color: #555;
+  }
+
+  #creditos{
+
+    color:rgb(253, 253, 253);
   }
   img{
     width: 20px;
