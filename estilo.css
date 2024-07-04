@@ -4,50 +4,79 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Arial, sans-serif;
-    background: url("candlelights-1868525_1280.jpg") ;
-  }
-  
-  #Corpo {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3e9; /* Cor de fundo pastel */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#Corpo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5); /* 0.5 representa 50% de opacidade */
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s;
+    transition: transform 0.6s;
 }
 
-  
-  input[type="number"], button {
+input[type="number"], button {
     margin: 10px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
     outline: none;
-  }
-  
-  button {
-    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #999;
+}
+
+button {
+    background-color: #a2d5c6; /* Cor pastel */
     color: #fff;
     cursor: pointer;
-    border-radius: 90px;
-  }
-  
-  h1 {
-    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #89c0a7; /* Cor pastel mais escura */
+    transform: scale(1.05);
+}
+
+h1 {
+    margin: 20px 0;
     font-size: 24px;
-    color: #000000;
-  }
+    color: #333;
+}
 
-  #creditos{
+#creditos {
+    color: #999;
+    margin-top: 20px;
+    font-size: 14px;
+}
 
-    color:rgb(253, 253, 253);
-  }
-  img{
-    width: 20px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-  }
-  
+p {
+    color: #666; /* Cor do texto em pastel suave */
+}
+
+#Corpo.rotating {
+    transform: rotateY(360deg);
+}
